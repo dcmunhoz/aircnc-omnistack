@@ -13,7 +13,7 @@ export default function Book ({ navigation }) {
         await api.post(`/spots/${id}/bookings`, {
             date
         }, {
-            header: { user_id }
+            headers: { user_id }
         })
         
         Alert.alert('Solicitação de reserva criada.');
